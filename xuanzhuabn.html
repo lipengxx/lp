@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			html{
+				font-size: 62.5%;
+			}
+			#zzz{
+				width: 200px;
+				height: 200px;border-radius: 200px;
+				overflow: hidden;
+				box-shadow:1px 1px 3px #7B899B;
+				transition: all 10s;
+				animation: cd 10s linear infinite;
+			}
+			@keyframes cd{
+				to{transform: rotate(360deg);}
+			}
+			#zzz:hover{
+				transform: rotate(360deg);
+				transition: all 10s;
+			}
+			#s{
+				width: 300px;
+				height: 150px;
+				background: lightseagreen;
+				position: relative;
+				line-height: 75px;
+				font-size: 3rem;
+				text-align: center;
+				overflow: hidden;
+				color: white;
+			}
+			#s p{
+				position: absolute;
+				top: 0;
+				margin-left: 45px;
+				transition: all 1s;
+			}
+			#s p:last-child{
+				top: 100%;
+			}
+			#s:hover p:first-child{
+				top: -100%;
+			}
+			#s:hover p:last-child{
+				top: 0;
+			}
+			#fan{
+				margin: 0 auto;
+				width: 300px;
+				height: 150px;
+				background: url(img/avd.jpg);
+				position: relative;
+				color: white;
+				overflow: hidden;
+			}
+			#fan1{
+				position: absolute;
+				width: 100px;
+				height: 150px;
+				background: #7B899B;
+				line-height: 75px;
+				text-align: center;
+				left: -100%;
+				transition: all 1s; 
+			}
+			#fan:hover div{
+				left: 0;
+			}
+			#sd{
+				width: 300px;
+				font-size: 2rem;
+				background: lightblue;
+				height: 100px;
+				line-height: 50px;
+				text-align: center;
+				perspective: 800;
+				
+				transition: all 1s;
+			}
+			#sd p{
+				color: white;
+			}
+			#sd:hover{
+				transform: rotateY(180deg);
+			}
+			#fang{
+				width: 200px;height: 200px;
+				background: lavender;
+				animation: 5s she linear alternate ;
+			}
+			@keyframes she{
+				30%{
+					background: lightblue;
+					margin-left: 500px;
+					margin-top: 200px;
+					
+				}
+				50%{
+					background: lightcoral;
+					margin-left: 600px;
+					margin-top: 300px;
+				}
+				100%{
+					background: lightsalmon;
+					margin-left: 800px;
+					margin-top: 400px;
+				}
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div id="zzz">
+			<img src="img/46C0BE3FEAEDD604C03C7E2B9A8DCE20.jpg" width="200px" />
+		</div>
+		<div id="s">
+			<p >衣带渐宽终不悔</p>
+			<p>为伊消得人憔悴</p>
+		</div>
+		<div id="fan">
+			<div id="fan1">
+				衣带渐宽终不悔，
+				为伊消得人憔悴。
+			</div>
+		</div>
+		<div id="sd">
+			<p>衣带渐宽终不悔，为伊消得人憔悴。</p>
+		</div>
+		<div id="fang">
+			
+		</div>
+		<script type="text/javascript">
+			
+		</script>
+		
+	</body>
+</html>
